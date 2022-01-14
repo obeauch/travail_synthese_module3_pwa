@@ -10,13 +10,15 @@
     </head>
     <body class="accueil">
         <div class="conteneur">
-            <h1>Accueil</h1>
+            <header>
+                <h1>Accueil</h1>
 
-            <div class="liens">
-                <a href="login">Se connecter à l'administration</a>
-            </div>
+                <div class="liens">
+                    <a href="login">Se connecter à l'administration</a>
+                </div>
+            </header>
 
-            <h3>Liste des activités</h3>
+            <h3>Liste de toutes les activités</h3>
             <div class="activites">
 
                 <?php foreach ($posts as $post) {?>
@@ -26,10 +28,11 @@
                     </div>
 
                     <div class="activite-type">
-                        <p class="titre"><?=$post["titre"]?> -</p>
+                        <p class="titre"><?=$post["titre"]?></p>
                         <p class="type"><?=$post["type"]?></p>
                     </div>
                 </div>
+                <p class="admin"><?=$post["prenom"]?> <?=$post["nom"]?></p>
                 <div class="ligne"></div>
                 <?php }?>
             </div>

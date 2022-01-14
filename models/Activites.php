@@ -44,9 +44,10 @@ class Activites extends BaseModel
     public function tousAvecCategories()
     {
         $sql = "
-        SELECT $this->table.*, activites_categories.type
+        SELECT $this->table.*, activites_categories.type, administrateurs.prenom, administrateurs.nom
         FROM $this->table
         INNER JOIN activites_categories ON fk_activite_categorie_id = activites_categories.id
+        INNER JOIN administrateurs ON fk_administrateur_id = administrateurs.id
         ";
 
         $stmt = $this->pdo()->prepare($sql);

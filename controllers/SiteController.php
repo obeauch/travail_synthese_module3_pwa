@@ -17,6 +17,9 @@ class SiteController extends BaseController
         $activites = new Activites();
         $posts = $activites->tousAvecCategories();
 
+        // $administrateur = new Activites();
+        // $admins = $administrateur->tousAvecAdministrateur();
+
         include "views/accueil.view.php";
     }
 
@@ -59,7 +62,7 @@ class SiteController extends BaseController
 
         $activites = new Activites();
         $posts = $activites->tousAvecCategories($id);
-        $admins = $activites->tousAvecAdministrateur($id);
+        // $admins = $activites->tousAvecAdministrateur($id);
         include "views/admin.view.php";
     }
 

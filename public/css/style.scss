@@ -23,17 +23,33 @@ $color-turquoise-pale: rgb(188, 225, 229);
     margin-top: 30px;
     box-shadow: 0px 0px 5px #111;
 
-    h1 {
-        background-color: $color-red-pale;
-        color: $color-red;
-        padding: 0px 10px;
-        border-radius: 10px;
-        border: 2px solid #333;
-        margin-bottom: 40px; 
+    header {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        h1 {
+            background-color: $color-red-pale;
+            color: $color-red;
+            padding: 0px 10px;
+            border-radius: 10px;
+            border: 2px solid #333;
+            margin: 40px auto;
+            transform: translateX(50%);  
+        }
+
+        .liens {
+            margin: 20px;
+
+        }
     }
+
 
     h3 {
         color: #333;
+        font-size: 24px;
     }
 
     a {
@@ -77,8 +93,6 @@ $color-turquoise-pale: rgb(188, 225, 229);
     .activites {
         background-color: rgb(188, 225, 229);
         color: #333;
-        // font-size: 24px;
-        // font-weight: bold;
         height: 60vh;
         width: 60vw;
         min-width: 300px;
@@ -100,27 +114,28 @@ $color-turquoise-pale: rgb(188, 225, 229);
             .activite-type {
                 align-items: center;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: start;
 
-                .image {
-                    margin-left: 20px;
-                    width: 240px;
-                }
-    
+                
                 .titre {
                     color: #333;
                     margin: 0px 20px;
                     min-width: 150px;
                 }
-    
+                
                 .type {
                     color: $color-turquoise;
                     font-size: 16px;
                     margin-right: 100px;
-                
                 }
-    
             }
+
+            .image {
+                margin-left: 20px;
+                min-width: 220px;
+            }
+
             .supprimer { 
                 margin: 0px 30px 0px 60px;
                 display: flex;
@@ -139,6 +154,14 @@ $color-turquoise-pale: rgb(188, 225, 229);
                 }
             }
 
+        }
+
+        
+        .admin {
+            color: $color-turquoise;
+            font-size: 10px;
+            margin-right: 50px;
+            text-align : right;
         }
 
         .ligne {

@@ -29,17 +29,39 @@ body {
           box-shadow: 0px 0px 5px #111;
 }
 
-.conteneur h1 {
+.conteneur header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.conteneur header h1 {
   background-color: #f0cec7;
   color: #d34d1c;
   padding: 0px 10px;
   border-radius: 10px;
   border: 2px solid #333;
-  margin-bottom: 40px;
+  margin: 40px auto;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.conteneur header .liens {
+  margin: 20px;
 }
 
 .conteneur h3 {
   color: #333;
+  font-size: 24px;
 }
 
 .conteneur a {
@@ -118,14 +140,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-}
-
-.conteneur .activites .activite .activite-type .image {
-  margin-left: 20px;
-  width: 240px;
 }
 
 .conteneur .activites .activite .activite-type .titre {
@@ -138,6 +157,11 @@ body {
   color: #0b8088;
   font-size: 16px;
   margin-right: 100px;
+}
+
+.conteneur .activites .activite .image {
+  margin-left: 20px;
+  min-width: 220px;
 }
 
 .conteneur .activites .activite .supprimer {
@@ -157,6 +181,13 @@ body {
 
 .conteneur .activites .activite .supprimer div a:hover {
   color: #a8431e;
+}
+
+.conteneur .activites .admin {
+  color: #0b8088;
+  font-size: 10px;
+  margin-right: 50px;
+  text-align: right;
 }
 
 .conteneur .activites .ligne {

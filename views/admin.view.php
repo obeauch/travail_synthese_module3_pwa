@@ -10,7 +10,14 @@
     </head>
     <body class="accueil">
         <div class="conteneur">
-            <h1>Admin</h1>
+            <header>
+                <h1>Admin</h1>
+
+                <div class="liens">
+                    <a href="accueil">Se déconnecter</a>
+                </div>
+
+            </header>
 
             <div class="liens">
                 <a href="ajout-activite">Ajouter une activité</a>
