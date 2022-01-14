@@ -51,8 +51,6 @@ body {
   border-radius: 10px;
   border: 2px solid #333;
   margin: 40px auto;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
 }
 
 .conteneur header .liens {
@@ -144,7 +142,7 @@ body {
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
 }
 
 .conteneur .activites .activite .activite-type .titre {

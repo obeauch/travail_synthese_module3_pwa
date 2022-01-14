@@ -10,7 +10,11 @@
     </head>
     <body class="accueil">
         <div class="conteneur">
+
+        <header>
             <h1>Ajouter une activité</h1>
+
+        </header>
 
             <?php if (isset($_GET['erreur'])) {?>
                 <div>

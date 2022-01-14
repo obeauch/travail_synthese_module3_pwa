@@ -16,7 +16,6 @@
                 <div class="liens">
                     <a href="accueil">Se déconnecter</a>
                 </div>
-
             </header>
 
             <div class="liens">
@@ -42,11 +41,11 @@
                 <div class="ligne"></div>
                 <?php }?>
             </div>
-
+<!--
 
             <div class="liens">
                 <a href="accueil">Se déconnecter</a>
-            </div>
+            </div> -->
 
         </div>
     </body>

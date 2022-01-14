@@ -46,25 +46,6 @@ class BaseModel
     }
 
     /**
-     * Supprimer une activités
-     */
-    public function deleteActivite($id)
-    {
-
-        $sql = "DELETE FROM $this->table
-                WHERE id = :id
-                ";
-
-        $stmt = $this->pdo()->prepare($sql);
-        $stmt->execute([
-            ":id" => $id,
-        ]);
-
-        return $stmt->fetch();
-
-    }
-
-    /**
      * Retourne la connexion à PDO et se connecte au besoin
      * @return PDO Instance de PDO
      */

@@ -17,9 +17,6 @@ class SiteController extends BaseController
         $activites = new Activites();
         $posts = $activites->tousAvecCategories();
 
-        // $administrateur = new Activites();
-        // $admins = $administrateur->tousAvecAdministrateur();
-
         include "views/accueil.view.php";
     }
 
@@ -55,14 +52,14 @@ class SiteController extends BaseController
 
     public function admin()
     {
-        $id = $_SESSION["administrateur_id"];
+        $id_admin = $_SESSION["administrateur_id"];
 
         $administrateur_model = new Administrateurs();
-        $user = $administrateur_model->parId($id);
+        $user = $administrateur_model->parId($id_admin);
 
         $activites = new Activites();
-        $posts = $activites->tousAvecCategories($id);
-        // $admins = $activites->tousAvecAdministrateur($id);
+        $posts = $activites->tousAvecCategoriesPourAdmin($id_admin);
+
         include "views/admin.view.php";
     }
 
@@ -73,24 +70,9 @@ class SiteController extends BaseController
 
         $model_activites = new Activites();
         $activite = $model_activites->deleteActivite($id);
-        // $success = $activite;
 
         header("location:admin");
         exit();
-        // include "views/admin.view.php";
-        // ????
-
-        // Si la suppression a fonctionnée
-        // if ($success) {
-        //     header("location:admin.php");
-        //     exit();
-
-        //     // Si la suppression n'a pas fonctionnée
-        // } else {
-        //     header("location:admin.php?erreur=1");
-        //     exit();
-        // }
-
     }
 
     public function ajoutActivite()
