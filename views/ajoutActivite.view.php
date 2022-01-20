@@ -49,8 +49,8 @@
                         </select>
                     </label>
 
-                    <div>
-                        <center><input type="submit" name="submit" value="Ajouter"><center>
+                    <div class="soum">
+                        <input type="submit" name="submit" value="Ajouter">
                     </div>
                 </form>
             </div>

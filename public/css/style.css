@@ -68,6 +68,7 @@ body {
 .conteneur h3 {
   color: #333;
   font-size: 24px;
+  margin: 30px 40px;
 }
 
 .conteneur a {
@@ -152,6 +153,7 @@ body {
 .conteneur .login input[type=submit] {
   background-color: #bce1e5;
   border: 2px solid #0b8088;
+  margin: 0px auto;
   margin-top: 30px;
   padding: 6px 20px;
   cursor: pointer;
@@ -161,6 +163,10 @@ body {
 
 .conteneur .login input[type=submit]:hover {
   background-color: #0b8088;
+}
+
+.conteneur .login .soum {
+  text-align: center;
 }
 
 .conteneur .activites {
@@ -211,14 +217,15 @@ body {
 
 .conteneur .activites .activite .activite-type .titre {
   color: #333;
-  margin: 0px 50px;
+  margin-left: 50px;
   min-width: 150px;
 }
 
 .conteneur .activites .activite .activite-type .type {
   color: #0b8088;
   font-size: 16px;
-  margin-right: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .conteneur .activites .activite .image {
@@ -227,13 +234,7 @@ body {
 }
 
 .conteneur .activites .activite .supprimer {
-  margin: 0px 30px 0px 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  margin: 0px 70px 0px 30px;
 }
 
 .conteneur .activites .activite .supprimer div a {
@@ -247,9 +248,9 @@ body {
 
 .conteneur .activites .admin {
   color: #0b8088;
-  font-size: 10px;
-  margin-right: 50px;
-  text-align: right;
+  font-size: 12px;
+  margin: 5px auto;
+  text-align: center;
 }
 
 .conteneur .activites .ligne {
