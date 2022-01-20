@@ -114,7 +114,7 @@ class Activites extends BaseModel
             ":id" => $id,
         ]);
 
-        return $stmt->fetch();
+        return $stmt;
 
     }
 

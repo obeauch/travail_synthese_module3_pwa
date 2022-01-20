@@ -12,8 +12,13 @@
         <div class="conteneur">
 
         <header>
+            <div class="liens">
+                <a href="admin">Retour vers admin</a>
+            </div>
+
             <h1>Ajouter une activité</h1>
 
+            <div class="cote-vide"></div>
         </header>
 
             <?php if (isset($_GET['erreur'])) {?>
@@ -24,39 +29,30 @@
                 </div>
             <?php }?>
 
-            <form action="ajout-activite-submit" method="post" enctype="multipart/form-data">
-                <label>
-                    <span>Titre</span>
-                    <input type="text" name="titre" required>
-                </label>
+            <div class="login ajout-form">
+                <form action="ajout-activite-submit" method="post" enctype="multipart/form-data">
+                    <label>
+                        <span>Titre</span>
+                        <input type="text" name="titre" required>
+                    </label>
 
-                <label>
-                    <span>Image</span>
-                    <input type="file" name="image">
-                </label>
+                    <label>
+                        <span>Image</span>
+                        <input type="file" name="image">
+                    </label>
 
-                <label>
-                    <span>Catégorie</span>
-                    <select name="categorie">
-                        <option name="type" value="1">Intérieure</option>
-                        <option name="type" value="2">Extérieure</option>
-                    </select>
-                </label>
-<!--
-                <label>
-                    <span>Admin</span>
-                    <select name="admin">
-                        <option name="type" value="1">Olivier</option>
-                        <option name="type" value="2">Pierre</option>
-                    </select>
-                </label> -->
-                <div>
-                    <input type="submit" name="submit" value="Ajouter">
-                </div>
-            </form>
+                    <label>
+                        <span>Catégorie</span>
+                        <select name="categorie">
+                            <option name="type" value="1">Intérieure</option>
+                            <option name="type" value="2">Extérieure</option>
+                        </select>
+                    </label>
 
-            <div class="liens">
-                <a href="admin">Retour vers votre page administrateur</a>
+                    <div>
+                        <center><input type="submit" name="submit" value="Ajouter"><center>
+                    </div>
+                </form>
             </div>
 
         </div>

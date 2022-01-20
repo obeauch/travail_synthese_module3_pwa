@@ -1,14 +1,17 @@
 body {
   margin: 0px;
-  background-color: #333;
+  background-color: #444;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .conteneur {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 90vh;
   min-height: 500px;
   width: 80vw;
   min-width: 400px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,8 +28,8 @@ body {
   background-color: #e0f0f2;
   margin: 0px auto;
   margin-top: 30px;
-  -webkit-box-shadow: 0px 0px 5px #111;
-          box-shadow: 0px 0px 5px #111;
+  -webkit-box-shadow: 2px 2px 8px #111;
+          box-shadow: 2px 2px 8px #111;
 }
 
 .conteneur header {
@@ -44,6 +47,10 @@ body {
   width: 100%;
 }
 
+.conteneur header .cote-vide {
+  width: 250px;
+}
+
 .conteneur header h1 {
   background-color: #f0cec7;
   color: #d34d1c;
@@ -54,6 +61,7 @@ body {
 }
 
 .conteneur header .liens {
+  width: 210px;
   margin: 20px;
 }
 
@@ -75,6 +83,7 @@ body {
   border: 1px solid #0b8088;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .conteneur .liens:hover {
@@ -90,15 +99,68 @@ body {
   max-height: 200px;
 }
 
-.conteneur form label {
+.conteneur .login-form form {
+  padding: 20px;
+  border: 2px solid #0b8088;
+  border-radius: 10px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.conteneur .login-form form label {
   display: block;
   margin: 5px;
 }
 
-.conteneur form label span {
+.conteneur .login-form form label span {
   display: inline-block;
   width: 100px;
   color: #0b8088;
+}
+
+.conteneur .ajout-form form {
+  padding: 20px;
+  border: 2px solid #0b8088;
+  border-radius: 10px;
+}
+
+.conteneur .ajout-form form label {
+  display: block;
+  margin: 5px;
+}
+
+.conteneur .ajout-form form label span {
+  display: inline-block;
+  font-size: 18px;
+  width: 100px;
+  color: #0b8088;
+}
+
+.conteneur .login {
+  margin: 40px;
+}
+
+.conteneur .login input,
+.conteneur .login select {
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #bce1e5;
+}
+
+.conteneur .login input[type=submit] {
+  background-color: #bce1e5;
+  border: 2px solid #0b8088;
+  margin-top: 30px;
+  padding: 6px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.conteneur .login input[type=submit]:hover {
+  background-color: #0b8088;
 }
 
 .conteneur .activites {
@@ -107,11 +169,13 @@ body {
   height: 60vh;
   width: 60vw;
   min-width: 300px;
+  max-width: 800px;
   margin-bottom: 50px;
   overflow: auto;
 }
 
 .conteneur .activites .activite {
+  max-width: 800px;
   color: #333;
   font-size: 18px;
   font-weight: bold;
@@ -127,8 +191,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 15px;
-  margin-left: 20px;
-  padding: 20px;
+  margin-left: 40px;
+  padding: 10px;
 }
 
 .conteneur .activites .activite .activite-type {
@@ -147,7 +211,7 @@ body {
 
 .conteneur .activites .activite .activite-type .titre {
   color: #333;
-  margin: 0px 20px;
+  margin: 0px 50px;
   min-width: 150px;
 }
 
@@ -189,8 +253,8 @@ body {
 }
 
 .conteneur .activites .ligne {
-  background-color: #aaa;
-  width: 50vw;
+  background-color: #0b8088;
+  width: 80%;
   min-width: 250px;
   height: 2px;
   margin: 0px auto;

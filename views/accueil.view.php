@@ -11,6 +11,7 @@
     <body class="accueil">
         <div class="conteneur">
             <header>
+                <div class="cote-vide"></div>
                 <h1>Accueil</h1>
 
                 <div class="liens">

@@ -8,9 +8,18 @@
         <link rel="stylesheet" href="<?=BASE?>/public/css/style.css">
         <title>Accueil</title>
     </head>
-    <body class="accueil">
+    <body class="login">
         <div class="conteneur">
-            <h1>Connexion</h1>
+            <header>
+                <div class="liens">
+                    <a href="accueil">Retour à l'accueil</a>
+                </div>
+
+                <h1>Connexion</h1>
+
+                <div class="cote-vide"></div>
+            </header>
+
             <?php if (isset($_GET['erreur'])) {?>
                     <div class="erreur">
                         <p>
@@ -18,16 +27,12 @@
                         </p>
                     </div>
                 <?php }?>
-            <div class="login">
+            <div class="login login-form">
                 <form action="login-submit" method="POST">
                     <input type="text" name="courriel" placeholder="Courriel">
                     <input type="password" name="mot_de_passe" placeholder="Mot de passe">
                     <input type="submit" name="submit" value="Se connecter">
                 </form>
-            </div>
-
-            <div class="liens">
-                <a href="accueil">Retour à l'accueil</a>
             </div>
         </div>
     </body>
